@@ -1,7 +1,10 @@
-import React from 'react';
+import React from 'react'
 
-const App = () => {
-  return <div>React Starter Kit in TypeScript</div>;
-};
+// 関数の宣言
+const App = (props: any) => {
+  const { message } = props
 
-export default App;
+  return <div>{message}</div>
+}
+
+export default App
