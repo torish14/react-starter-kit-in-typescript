@@ -17,18 +17,27 @@
 本プロジェクトは、[create-react-app](https://reactjs.org/docs/create-a-new-react-app.html) により作成したアプリケーションから React の学習に最低限必要な機能のみを厳選し、軽量化したものです。
 以下の手順でアプリケーションを起動できます。
 
-    $ wget https://github.com/DiveIntoHacking/react-starter-kit-in-typescript-with-node-v12.14.1/archive/v1.5.tar.gz
-    $ tar zxvf v1.5.tar.gz
-    $ cd react-starter-kit-in-typescript-with-node-v12.14.1-1.2
-    $ yarn install
-    $ yarn start
+    wget https://github.com/DiveIntoHacking/react-starter-kit-in-typescript-with-node-v12.14.1/archive/v1.5.tar.gz
+    tar zxvf v1.5.tar.gz
+    cd react-starter-kit-in-typescript-with-node-v12.14.1-1.2
+    yarn install
+    yarn start
 
 ## アプリケーションの起動方法(Dockerを使用する場合)
 
-    $ wget https://github.com/DiveIntoHacking/react-starter-kit-in-typescript-with-node-v12.14.1/archive/v1.5.tar.gz
-    $ tar zxvf v1.5.tar.gz
-    $ cd react-starter-kit-in-typescript-with-node-v12.14.1-1.1
-    $ touch .bash_history
-    $ docker-compose build
-    $ docker-compose run --rm app yarn install
-    $ docker-compose up
+    wget https://github.com/DiveIntoHacking/react-starter-kit-in-typescript-with-node-v12.14.1/archive/v1.5.tar.gz
+    tar zxvf v1.5.tar.gz
+    cd react-starter-kit-in-typescript-with-node-v12.14.1-1.1
+    touch .bash_history
+    docker-compose build
+    docker-compose run --rm app yarn install
+    docker-compose up
+
+## 学んだこと
+
+- `index.tsx` では、ReactDOM を使って、`root` ID を `App` コンポーネントに置き換える
+  - `root` ID は `index.html` 内にある
+- `props` は、コンポーネントに属性を持たせる
+  - JavaScript の分割代入を使う
+
+-
