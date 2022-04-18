@@ -1,9 +1,11 @@
 import React from 'react'
 
-// 関数の宣言
-const App = (props: any) => {
-  const { message } = props
+interface AppProps {
+  message: string
+}
 
+// 関数の宣言
+const App = ({ message }: AppProps) => {
   return <div>{message}</div>
 }
 
